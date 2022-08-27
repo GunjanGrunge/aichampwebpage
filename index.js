@@ -1,8 +1,4 @@
-
-
-
-
- function getQuote(){
+function getQuote(){
     const options = {
         method: 'GET',
         headers: {
@@ -14,10 +10,17 @@
     fetch('https://free-famous-quotes.p.rapidapi.com/', options)
         .then(response => response.json())
         .then(response => document.getElementById("para").innerText=(`
-        We are Under Construction.  However, here is the quote of the day :- "${response.quote }" ~ ${response.author}`))
+        MeanWhile..... :- "${response.quote }" ~ ${response.author}`))
         .catch(err => console.error(err));
     }
     
+
+    function redirect_Page() 
+    {var tID = setTimeout(function () {
+            window.location.href = "mainpage.html";
+            window.clearTimeout(tID);		// clear time out.
+        }, 8000)
+    };
 
 
 

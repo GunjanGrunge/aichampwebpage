@@ -56,6 +56,7 @@ h2{
     display: inline-flex;
     /* border: 2px solid red; */
     margin: 1% 4%;
+    justify-content: space-between;
 }
 
 
