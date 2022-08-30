@@ -17,7 +17,7 @@ function getQuote(){
 
     function redirect_Page() 
     {var tID = setTimeout(function () {
-            window.location.href = "mainpage.html";
+            window.location.href = "Home.html";
             window.clearTimeout(tID);		// clear time out.
         }, 8000)
     };
